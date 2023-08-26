@@ -8,25 +8,49 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
-    <!-- Awal Hero -->
-    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-title">
-        <main>
-            <p class="title">Pesona</p> <br>
-            <p class="title">Warisan</p>
-           <div class="container-fluid awan3">
-            <img src="img/gunungan.png" class="gunungan">
-            <img src="img/gunungan2.png" class="gunungan2">
-           </div>
-           <div class="container-fluid awan2">
-            <img src="img/gunungan2.png" class="gunungan2">
-            <img src="img/gunungan.png" class="gunungan">
-           </div>
-           <div class="container-fluid awan1">
-           </div>
-        </main>
-        <img src="img/wayang.png" class="img-fluid">
-    </section>
-    <!-- Akhir Hero -->
+    <!-- Hero Image -->
+    <div id="hero" class="container-fluid">
+      <div class="row position-absolute bottom-50 start-50 translate-middle-x">
+        <div class="col">
+          <div class="title text-center">
+            <p>Pesona <br>Warisan</p>
+          </div>
+        </div>
+      </div>
+      <div id="awan" class="row position-absolute bottom-0 start-50 translate-middle-x">
+        <div class="awan3 position-absolute bottom-0 translate-middle-x start-50">
+        </div>
+        <div class="awan2 position-absolute bottom-0 translate-middle-x start-50"></div>
+        <div class="awan1 position-absolute bottom-0 translate-middle-x start-50"></div>
+      </div>
+    </div>
+    <!-- Akhir Hero Image -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-jawa p-5">
+      <div class="container text-white">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="tentang" class="container-fluid">
+
+    </div>
+    <!-- Akhir Navbar -->
     <!-- Script JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
