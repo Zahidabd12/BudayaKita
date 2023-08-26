@@ -14,10 +14,10 @@ body{
     background-attachment: fixed
 }
 .title{
-    font-size: 115px;
+    font-size: 95px;
     font-family: 'Roboto Slab';
     color: #290A06;
-    line-height: 95px;
+    line-height: 70px;
     text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
 }
 #awan{
