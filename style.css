@@ -1,52 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 
-body{
+
+
+
+/* Mobile */
+/* @media only screen and (min-width: 768px) {
+    #hero{
+        height: 100vh;
+        width: 100%;
+        background-image: url(img/mobile.jpg); 
+        background-size: cover;
+        overflow: hidden;
+    }
+    body{
     font-family: 'Roboto Slab', serif;
     min-height: 2000px;
     font-weight: bolder;
+    }
+    .title{
+        width: 100%;
+        position: fixed;
+        font-size: 60px;
+        text-align: center;
+        left: 5vh;
+        top: 40vh;
+        font-family: 'Roboto Slab';
+        color: #290A06;
+        line-height: 65px;
+        text-shadow: 3px 2px rgba(0, 0, 0, 0.25);
+    }
+    .bg-jawa{
+        background-color: #55423D !important; 
+    }
+    .text-white{
+        color: white !important;
+    }
+
+    #tentang{
+        background-color: #55423D !important;
+        min-height: 100vh;
+        margin-top: -20px;
+    }
+}; */
+
+
+/* Dekstop */
+@media only screen and (min-width: 1024px) {
+    body{
+        font-family: 'Roboto Slab', serif;
+        min-height: 2000px;
+        font-weight: bolder;
+        
+    }
     
-}
-
-#hero{
-    height: 100vh;
-    width: 100%;
-    background-image: url(img/heroImage.png); 
-    background-size: cover;
-    overflow: hidden;
-}
-
-#hero .mask-container{
-    position: absolute;
-    /* background-color: salmon; */
-    inset: 0;
-    -webkit-mask-image: url(img/mask-hero.svg);
-    -webkit-mask-size: cover;
-}
-.title{
-    width: 100%;
-    position: fixed;
-    font-size: 80px;
-    text-align: center;
-    left: 5vh;
-    top: 30vh;
-    font-family: 'Roboto Slab';
-    color: #290A06;
-    line-height: 65px;
-    text-shadow: 3px 2px rgba(0, 0, 0, 0.25);
-}
-.bg-jawa{
-    background-color: #55423D !important; 
-}
-.gunungan{
-    float: left;
-}
-
-.text-white{
-    color: white !important;
-}
-
-#tentang{
-    background-color: #55423D !important;
-    min-height: 100vh;
-    margin-top: -20px;
+    #hero{
+        height: 100vh;
+        width: 100%;
+        background-image: url(img/heroImage.png); 
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    #hero .mask-container{
+        position: absolute;
+        inset: 0;
+        -webkit-mask-image: url(img/mask-hero.svg);
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        mask-image: url(img/mask-hero.svg);
+    }
+    .title{
+        width: 100%;
+        position: fixed;
+        font-size: 80px;
+        text-align: center;
+        left: 5vh;
+        top: 30vh;
+        font-family: 'Roboto Slab';
+        color: #290A06;
+        line-height: 65px;
+        text-shadow: 3px 2px rgba(0, 0, 0, 0.25);
+    }
+    .bg-jawa{
+        background-color: #55423D !important; 
+    }
+    .gunungan{
+        float: left;
+    }
+    
+    .text-white{
+        color: white !important;
+    }
+    
+    #tentang{
+        background-color: #55423D !important;
+        min-height: 100vh;
+        margin-top: -20px;
+    }
 }
