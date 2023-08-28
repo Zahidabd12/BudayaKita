@@ -5,6 +5,7 @@
 
 /* Mobile */
 body{
+    background-color: #55423d !important;
     min-height: 2000px;
     font-family: 'Roboto Slab', serif;
 }
@@ -40,6 +41,7 @@ body{
 
 @media (min-width: 768px) { 
     body{
+        background-color: #55423d !important;
         min-height: 2000px;
         font-family: 'Roboto Slab', serif;
     }
@@ -81,6 +83,7 @@ body{
     body{
         min-height: 2000px;
         font-family: 'Roboto Slab', serif;
+        background-color: #55423d !important;
     }
     .contain{
         position: absolute;
@@ -116,6 +119,7 @@ body{
 
 @media (min-width: 1440px){
     body{
+        background-color: #55423d !important;
         min-height: 2000px;
         font-family: 'Roboto Slab', serif;
     }
