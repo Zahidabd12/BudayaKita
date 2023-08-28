@@ -4,6 +4,9 @@ html{
     scroll-behavior: smooth;
 }
 
+.display-1{
+    font-family: 'Roboto';
+}
 
 /* Mobile */
 .introduction.hidden, .contain.hidden{
