@@ -5,12 +5,12 @@
 
 /* Mobile */
 body{
-    background-color: #55423d !important;
+    background-color: #8A6A60  !important;
     min-height: 2000px;
     font-family: 'Roboto Slab', serif;
 }
 .contain{
-    position: absolute;
+    position: fixed;
     font-family: 'Roboto Slab';
     left: 50%;
     top: 25%;
@@ -41,12 +41,12 @@ body{
 
 @media (min-width: 768px) { 
     body{
-        background-color: #55423d !important;
+        background-color: #8A6A60  !important;
         min-height: 2000px;
         font-family: 'Roboto Slab', serif;
     }
     .contain{
-        position: absolute;
+        position: fixed;
         font-size: 70px !important;
         font-family: 'Roboto Slab';
         left: 50%;
@@ -81,12 +81,12 @@ body{
 
 @media (min-width: 1024px){
     body{
-        min-height: 2000px;
+        min-height: 3000px;
         font-family: 'Roboto Slab', serif;
-        background-color: #55423d !important;
+        background-color: #8A6A60 !important;
     }
     .contain{
-        position: absolute;
+        position: fixed;
         font-size: 90px !important;
         font-family: 'Roboto Slab';
         left: 50%;
@@ -119,7 +119,7 @@ body{
 
 @media (min-width: 1440px){
     body{
-        background-color: #55423d !important;
+        background-color: #8A6A60 !important;
         min-height: 2000px;
         font-family: 'Roboto Slab', serif;
     }
