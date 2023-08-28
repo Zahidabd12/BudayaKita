@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 
+
+
+
+/* Mobile */
 body{
     min-height: 2000px;
     font-family: 'Roboto Slab', serif;
@@ -8,25 +12,141 @@ body{
     position: absolute;
     font-family: 'Roboto Slab';
     left: 50%;
-    top: 50%;
+    top: 25%;
     transform: translate(-50%, -50%);
     color: #FFFFFe;
-    text-shadow: 3px 3px rgba(0,0,0,0.25);
+    text-shadow: 5px 5px rgba(0,0,0,0.25);
     text-align: center;
 }
 
 #hero{
-    height: 120vh;
-    border: 2px solid red;
-    background-image: radial-gradient(#FFFFFe,#E18B3F);
+    height: 100vh;
+    background-image: radial-gradient(#ffc0ad, #55423d);
 }
-#hero:hover .contain{
-    contain: 'BudayaKu';
+#navbar{
+    position: absolute;
+    top: 15vh;
+}
+.bg-javanese{
+    background-color: #55423d;
+}
+#about .container-fluid{
+    height: 1000px;
+    background-color: #55423d;
 }
 
-#hero:hover{
-    height: 120vh;
-    border: none;
-    background-image: url(img/heroImage.png);
-    background-size: cover;
+
+/* Tablets */
+
+@media (min-width: 768px) { 
+    body{
+        min-height: 2000px;
+        font-family: 'Roboto Slab', serif;
+    }
+    .contain{
+        position: absolute;
+        font-size: 70px !important;
+        font-family: 'Roboto Slab';
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFe;
+        text-shadow: 5px 5px rgba(0,0,0,0.25);
+        text-align: center;
+    }
+    
+    #hero{
+        height: 100vh;
+        background-image: radial-gradient(#ffc0ad, #55423d);
+    }
+    #navbar{
+        position: absolute;
+        top: 15vh;
+    }
+    .bg-javanese{
+        background-color: #55423d;
+    }
+    #about .container-fluid{
+        height: 1000px;
+        background-color: #55423d;
+    }
+    
+    
 }
+
+
+/* Laptop */
+
+@media (min-width: 1024px){
+    body{
+        min-height: 2000px;
+        font-family: 'Roboto Slab', serif;
+    }
+    .contain{
+        position: absolute;
+        font-size: 90px !important;
+        font-family: 'Roboto Slab';
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFe;
+        text-shadow: 5px 5px rgba(0,0,0,0.25);
+        text-align: center;
+    }
+    
+    #hero{
+        height: 100vh;
+        background-image: radial-gradient(#ffc0ad, #55423d);
+    }
+    #navbar{
+        position: absolute;
+        top: 15vh;
+    }
+    .bg-javanese{
+        background-color: #55423d;
+    }
+    #about .container-fluid{
+        height: 1000px;
+        background-color: #55423d;
+    }
+    
+}
+
+/* large Laptop */
+
+@media (min-width: 1440px){
+    body{
+        min-height: 2000px;
+        font-family: 'Roboto Slab', serif;
+    }
+    .contain{
+        position: absolute;
+        font-family: 'Roboto Slab';
+        left: 50%;
+        top: 40%;
+        font-size: 120px !important;
+        transform: translate(-50%, -50%);
+        color: #FFFFFe;
+        text-shadow: 5px 5px rgba(0,0,0,0.25);
+        text-align: center;
+    }
+    
+    #hero{
+        height: 100vh;
+        background-image: radial-gradient(#ffc0ad, #55423d);
+    }
+    #navbar{
+        position: absolute;
+        top: 15vh;
+    }
+    .bg-javanese{
+        background-color: #55423d;
+    }
+    #about .container-fluid{
+        height: 1000px;
+        background-color: #55423d;
+    }
+    
+}
+
+
