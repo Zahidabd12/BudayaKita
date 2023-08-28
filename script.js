@@ -1,6 +1,6 @@
 gsap.registerPlugin(TextPlugin);
-gsap.to(".introduction", {duration: 3, y:1000, opacity: 1});
-gsap.to(".contain", {duration: 2, delay: .5, text: 'BudayaKita'});
+gsap.to(".introduction", {duration: 3, y:1500, opacity: 1});
+gsap.to(".contain", {duration: 2, delay: .5, text: 'Pesona<br>Warisan'});
 gsap.from(".ani",{ duration: 3, y:55, opacity: 0.5});
 gsap.from(".megamendung", {duration: 2, y:-150, opacity: 0});
 

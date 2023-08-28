@@ -22,8 +22,10 @@ body{
 .contain{
     position: fixed;
     font-family: 'Roboto Slab';
+    font-size: 20px;
     left: 50%;
     top: 25%;
+    line-height: 2.5rem !important;
     transform: translate(-50%, -50%);
     color: #290A06;
     text-shadow: 3px 3px #290a0655;
@@ -36,6 +38,7 @@ body{
     background-image: url(img/Megamendung.svg);
     top: 0;
     background-size: cover;
+    background-position: -200px 0px;
     opacity: 0.5;
     z-index: 1;
 }
@@ -46,6 +49,7 @@ body{
 #navbar{
     position: absolute;
     top: 15vh;
+    z-index: 10;
 }
 .bg-javanese{
     background-color: #55423d;
@@ -79,7 +83,8 @@ body{
         font-size: 70px !important;
         font-family: 'Roboto Slab';
         left: 50%;
-        top: 30%;
+        top: 40%;
+        line-height: 4rem !important;
         transform: translate(-50%, -50%);
         color: #290A06;
         text-shadow: 3px 3px #290a0655;
@@ -102,6 +107,7 @@ body{
     #navbar{
         position: absolute;
         top: 15vh;
+        z-index: 10;
     }
     .bg-javanese{
         background-color: #55423d;
@@ -148,7 +154,8 @@ body{
         font-size: 90px !important;
         font-family: 'Roboto Slab';
         left: 50%;
-        top: 40%;
+        top: 45%;
+        line-height: 5rem !important;
         transform: translate(-50%, -50%);
         color: #290A06;
         text-shadow: 3px 3px #290a0655;
@@ -162,6 +169,7 @@ body{
     /* Awal Hero dan Navbar */
     #navbar{
         position: absolute;
+        z-index: 10;
         top: 15vh;
     }
     .bg-javanese{
@@ -197,8 +205,9 @@ body{
         position: absolute;
         font-family: 'Roboto Slab';
         left: 50%;
-        top: 40%;
+        top: 45%;
         font-size: 120px !important;
+        line-height: 6rem !important;
         transform: translate(-50%, -50%);
         color: #290A06;
         text-align: center;
@@ -220,6 +229,7 @@ body{
     #navbar{
         position: absolute;
         top: 15vh;
+        z-index: 10;
     }
     .bg-javanese{
         background-color: #55423d;
