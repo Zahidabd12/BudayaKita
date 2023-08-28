@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 
-
-
-
 /* Mobile */
+
+
+/* Tablets */
 @media only screen and (min-width: 768px) {
     #hero{
         height: 100vh;
@@ -99,10 +99,6 @@
     .bg-jawa{
         background-color: #55423D !important; 
     }
-    .gunungan{
-        float: left;
-    }
-    
     .text-white{
         color: white !important;
     }
