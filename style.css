@@ -10,11 +10,23 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #FFFFFe;
+    text-shadow: 3px 3px rgba(0,0,0,0.25);
+    text-align: center;
 }
 
 #hero{
-    height: 100vh;
+    height: 120vh;
     border: 2px solid red;
-    background-color: salmon;
+    background-image: radial-gradient(#FFFFFe,#E18B3F);
+}
+#hero:hover .contain{
+    contain: 'BudayaKu';
+}
+
+#hero:hover{
+    height: 120vh;
+    border: none;
+    background-image: url(img/heroImage.png);
+    background-size: cover;
 }
