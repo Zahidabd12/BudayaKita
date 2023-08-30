@@ -13,11 +13,13 @@ gsap.from(".navbar", {duration: 2.5, delay:1.5, y:100, opacity: 1});
 
 // JQuery Code
 $(document).on("scroll",function(){
-  if ($(document).scrollTop() > 500){
+  if ($(document).scrollTop() > 750){
     $(".introduction").addClass("hidden");
     $(".contain").addClass("hidden");
+    $(".navbar").addClass("fixed-top");
   }else {
     $(".introduction").removeClass("hidden");
     $(".contain").removeClass("hidden");
+    $(".navbar").removeClass("fixed-top");
   }
 });
