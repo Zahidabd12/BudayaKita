@@ -20,4 +20,9 @@ $(document).on("scroll",function(){
     $(".introduction").removeClass("hidden");
     $(".contain").removeClass("hidden");
   }
+  if ($(document).scrollTop() > 850){
+    $(".nav").addClass("fixed-top");   
+  }else {
+    $(".nav").removeClass("fixed-top");
+  }
 });
