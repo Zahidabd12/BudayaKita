@@ -12,7 +12,7 @@ gsap.from(".megamendung", {duration: 2, delay:1.5, y:-150, opacity: 0.1});
 
 // JQuery Code
 $(document).on("scroll",function(){
-  if ($(document).scrollTop() > 150){
+  if ($(document).scrollTop() > 50){
     $(".introduction").addClass("hidden");
   }else {
     $(".introduction").removeClass("hidden");
