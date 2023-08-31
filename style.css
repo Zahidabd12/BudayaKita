@@ -240,6 +240,7 @@ h1.text-center{
     /* About */
     h1.text-center{
       font-size: 2.5rem !important;
+      margin-top: 10rem !important;
     }
     #about .container-fluid{
         background-color: #55423d;
@@ -357,18 +358,6 @@ h1.text-center{
       color: #e78fb3 !important;
       font-size: 1.2rem !important;
       transition: .5s;
-    }
-    .btn{
-      width: fit-content;
-      height: fit-content;
-      background-color:#ffc0ad !important;
-      color: #271c19;
-      box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-      font-family: 'Roboto Slab';
-    }
-    .btn:hover{
-      background-color: #e78fb3 !important;
-      color: #fffffe !important;
     }
 }
 
