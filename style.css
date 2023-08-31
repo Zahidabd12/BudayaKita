@@ -66,7 +66,7 @@ body{
 }
 
 /* About */
-.col.mt-5 .mt-5{
+h1.text-center{
   font-size: 1.5rem !important;
 }
 #about .container-fluid{
@@ -238,7 +238,7 @@ body{
         background-color: #55423d;
     }
     /* About */
-    .col.mt-5 .mt-5{
+    h1.text-center{
       font-size: 2.5rem !important;
     }
     #about .container-fluid{
@@ -615,7 +615,7 @@ body{
         height: 1000px;
         background-color: #55423d;
     }
-    .col.mt-5 .mt-5{
+    h1.text-center{
       font-size: 4rem !important;
     }
     #about .container-fluid{
