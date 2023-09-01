@@ -75,11 +75,11 @@ h1.text-center{
     color: #fffffe;
     text-align: center;
     font-family: 'Roboto Slab';
-    font-size: .5rem !important;
+    font-size: .8rem !important;
     padding: 5px !important;
 }
 .text{
-  text-align: center !important;
+  text-align: left !important;
 }
  /* Loading.. */
  .lds-roller {
@@ -168,10 +168,13 @@ h1.text-center{
   }
 /* Akhir Loading */
 /* Navbar */
+.nav.fixed-top{
+  background-color: #55423d;
+}
 .nav-item > *{
   font-family: 'Roboto Slab';
   color: #fffffe !important;
-  font-size: 0.5rem !important;
+  font-size: .5rem !important;
 }
 
 .nav-item > *:hover{
