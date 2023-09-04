@@ -23,3 +23,30 @@ $(document).on("scroll",function(){
     $(".nav").removeClass("fixed-top");
   }
 });
+
+//swiper JS
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+    /*autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    */
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
