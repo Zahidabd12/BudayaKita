@@ -606,7 +606,7 @@ h1.about{
         transform: translate(-50%, -50%);
         color: #290A06;
         text-align: center;
-        opacity: .5;
+        opacity: 0;
     }
     .contain.geser{
       left: -100% !important;
