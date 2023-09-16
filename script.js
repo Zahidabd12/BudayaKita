@@ -1,7 +1,7 @@
 // Native Code
 // GSAP Animation
 gsap.registerPlugin(TextPlugin);
-gsap.to(".introduction", {duration: 2, delay:.5, opacity: 0,});
+gsap.to(".introduction", {duration: 3, delay:1.5, opacity: 0, y:2000});
 gsap.to(".contain", {duration:2, delay:1.5, opacity:1});
 gsap.from(".ani",{ duration: 3, y:100, delay:1, opacity: .5});
 gsap.from("#navbar", {duration: 2, delay:2, opacity: 0});
