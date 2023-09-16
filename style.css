@@ -13,17 +13,15 @@ html{
 }
 
 /* Mobile */
-.introduction.hidden, .contain.hidden{
-    display: none !important;
-}
 .introduction{
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color:#55423d;
     z-index: 99999;
     overflow-y: hidden;
+    display: none;
 }
 body{
     font-family: 'Roboto Slab', serif;
@@ -40,6 +38,11 @@ body{
     color: #290A06;
     text-shadow: 3px 3px #290a0655;
     text-align: center;
+    opacity: 0;
+}
+.contain.geser{
+  left: -100% !important;
+  transition: .2s;
 }
 .megamendung{
     width: 100%;
@@ -53,7 +56,7 @@ body{
     z-index: 1;
 }
 #hero{
-    height: 100vh;
+    height: 85vh;
     background-image: radial-gradient(#ffc0ad 5%, #55423d 85%);
 }
 #navbar{
@@ -66,20 +69,19 @@ body{
 }
 
 /* About */
-h1.text-center{
+h1.about{
   font-size: 1.5rem !important;
 }
-#about .container-fluid{
-    min-height: 1000px;
+#about{
     background-color: #55423d;
     color: #fffffe;
     text-align: center;
     font-family: 'Roboto Slab';
-    font-size: .5rem !important;
+    font-size: .8rem !important;
     padding: 5px !important;
 }
 .text{
-  text-align: center !important;
+  text-align: left !important;
 }
  /* Loading.. */
  .lds-roller {
@@ -168,10 +170,13 @@ h1.text-center{
   }
 /* Akhir Loading */
 /* Navbar */
+.nav.fixed-top{
+  background-color: #55423d;
+}
 .nav-item > *{
   font-family: 'Roboto Slab';
   color: #fffffe !important;
-  font-size: 0.5rem !important;
+  font-size: .5rem !important;
 }
 
 .nav-item > *:hover{
@@ -189,13 +194,15 @@ h1.text-center{
         display: none !important;
     }
     .introduction{
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        background-color:#55423d;
-        z-index: 99999;
-    }
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      background-color:#55423d;
+      z-index: 99999;
+      overflow-y: hidden;
+      display: none;
+  }
     .display-1{
       font-family: 'Roboto Slab';
       text-shadow: 3px 3px solid rgba(0, 0, 0, 0.25);
@@ -215,6 +222,12 @@ h1.text-center{
         color: #290A06;
         text-shadow: 3px 3px #290a0655;
         text-align: center;
+        transition: 1s;
+        opacity: .5;
+    }
+    .contain.geser{
+      left: -100% !important;
+      transition: .2s;
     }
     .megamendung{
         width: 100%;
@@ -239,10 +252,10 @@ h1.text-center{
         background-color: #55423d;
     }
     /* About */
-    h1.text-center{
+    h1.about{
       font-size: 2.5rem !important;
-      margin-top: 10rem !important;
     }
+
     #about .container-fluid{
         background-color: #55423d;
         color: #fffffe;
@@ -366,21 +379,23 @@ h1.text-center{
 /* Laptop */
 
 @media (min-width: 1024px){
-    .introduction.hidden .contain.hidden{
-        display: none !important;
-    }
     .display-1{
         font-family: 'Roboto Slab';
         text-shadow: 3px 3px solid rgba(0, 0, 0, 0.25);
     }
     .introduction{
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        background-color: #55423d;
-        z-index: 99999;
-    }
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      background-color:#55423d;
+      z-index: 99999;
+      overflow-y: hidden;
+      display: none;
+  }
+  .introduction.hidden{
+    display: none !important;
+   }
     /* Text Hero */
     .megamendung{
         width: 100%;
@@ -395,6 +410,7 @@ h1.text-center{
     body{
         font-family: 'Roboto Slab', serif;
         background-color: #795D55 !important;
+        /* background-image: linear-gradient(50% #795D55, 50% #55423d); */
     }
     .contain{
         position: fixed;
@@ -407,8 +423,12 @@ h1.text-center{
         color: #290A06;
         text-shadow: 3px 3px #290a0655;
         text-align: center;
+        transition: 1s;
     }
-    
+    .contain.geser{
+      left: -100% !important;
+      transition: .2s;
+    }
     #hero{
         height: 100vh;
         background-image: radial-gradient(#ffc0ad 5%, #55423d 85%);
@@ -416,7 +436,6 @@ h1.text-center{
     /* Awal Hero dan Navbar */
     #navbar{
         position: absolute;
-        z-index: 10;
         top: 16vh;
     }
     .bg-javanese{
@@ -424,12 +443,12 @@ h1.text-center{
         color: #FFFFFe !important;
     }
     /* About */
-    #about .container-fluid{
-        min-height: 700px;
+    #about{
         background-color: #55423d;
         color: #fffffe;
         font-family: 'Roboto Slab';
         font-size: 1rem !important;
+        position: relative;
     }
     .text{
       text-align: left !important;
@@ -528,7 +547,13 @@ h1.text-center{
       color: #fffffe !important;
       font-size: 1.2rem !important;
     }
-
+    .nav-link.active{
+      border-bottom: 2px solid salmon;
+      font-family: 'Roboto Slab';
+      color: #e78fb3 !important;
+      font-size: 1.2rem !important;
+      transition: .5s;
+    }
     .nav-item > *:hover{
       border-bottom: 2px solid salmon;
       font-family: 'Roboto Slab';
@@ -541,23 +566,43 @@ h1.text-center{
       padding: 20px;
       box-shadow: 2px 0px rgba(0, 0, 0, 0.25);
     }
+
+    /* Artikel */
+    #artikel{
+      font-family: 'Roboto Slab';
+    }
+
+    /* Card */
+    #card{
+      font-family: 'Roboto Slab';
+
+    }
+
+    /* Footer */
+    #footer{
+      font-family: 'Roboto Slab';
+      background-color: #170503;
+      color: white;
+      height: 35px;
+      padding: 1rem 1rem 2rem 1rem;
+    }
 }
 
 /* large Laptop */
 
 @media (min-width: 1440px){
-    .introduction.hidden .contain.hidden{
-        display: none !important;
-        transition: 3s;
-    }
     .introduction{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        background-color:#55423d;
-        z-index: 99999;
-    }
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      background-color:#55423d;
+      z-index: 99999;
+      overflow-y: hidden;
+  }
+  .introduction.hidden{
+   display: none !important;
+  }
     .display-1{
       font-family: 'Roboto Slab';
       text-shadow: 3px 3px solid rgba(0, 0, 0, 0.25);
@@ -578,6 +623,11 @@ h1.text-center{
         transform: translate(-50%, -50%);
         color: #290A06;
         text-align: center;
+        opacity: 0;
+    }
+    .contain.geser{
+      left: -100% !important;
+      transition: .2s;
     }
     .megamendung{
         width: 100%;
@@ -605,10 +655,10 @@ h1.text-center{
         min-height: 1000px;
         background-color: #55423d;
     }
-    h1.text-center{
+    h1.about{
       font-size: 4rem !important;
     }
-    #about .container-fluid{
+    #about{
         background-color: #55423d;
         color: #fffffe;
         text-align: center;
@@ -720,5 +770,4 @@ h1.text-center{
       transition: .5s;
     }
 }
-
 
